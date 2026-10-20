@@ -6,6 +6,12 @@ CHANGELOG
 CHANGELOG
 #########
 
+Unreleased
+##########
+
+* Added "Go to page" popup when clicking the page label (#2)
+* Added fonts/opensans-regular-webfont.woff fallback for Ubooquity's default resources (#1)
+
 0.1.1
 #####
 

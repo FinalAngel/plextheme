@@ -95,9 +95,43 @@ body {
 
 #pageselector {
     display: none;
-    padding: 10px 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1090;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow: auto;
+    padding: 10px 15px;
+    color: rgb(187, 187, 187);
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-color: #191a1c;
+
     .popuptitle {
-        color: #ccc;
+        font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+        color: #777;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .pagenumber {
+        display: inline-block;
+        min-width: 32px;
+        margin: 2px;
+        padding: 4px 6px;
+        color: #fff;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    a.pagenumber:hover {
+        text-decoration: none;
+        background-color: darken(#cc7b19, 10%);
+    }
+    .currentpagenumber {
+        background-color: #cc7b19;
     }
 }
 

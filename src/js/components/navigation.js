@@ -86,7 +86,8 @@ export default class Navigation {
             var prev = '';
             var next = '';
             var hidden = '';
-            var pagetext = $('#pagelabel').text();
+            // clicking the page label opens Ubooquity's "Go to page" popup
+            var pagetext = `<a href="#" class="pagination-label" onclick="showHidePopupMenu('pageselector','searchbox','settingsbox','comicdetails');return false;">${$('#pagelabel').text()}</a>`;
             var page = false;
 
             // show left arrow
